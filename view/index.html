@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Leo's Website</title>
+	<!-- script and link tags should go here -->
 </head>
 <body>
 	<div id="my_view">
@@ -9,6 +10,8 @@
 		and her age is {{ age }}
 	</div>
 </body>
+<!-- You put this into <html> and you can't do that. It should be in <head> -->
+<!-- or at the end of the file since the DOM tree has to load first -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
 <script src="script.js"></script>
 </html>
