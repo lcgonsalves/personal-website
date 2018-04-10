@@ -2,11 +2,15 @@ const express = require("express");
 const path	  = require("path");
 const app     = express();
 
+const WEB_PORT = 3000
+
+app.use(express.static("view"));
+
 app.get("/", (req, res) => {
-	res.sendFile(path.join(__dirname, 'view/index.html'));
-	console.log('connection established');
+	res.sendFile(path.join(__dirname, "view/index.html"));
+	console.log("Connection established!");
 });
 
-app.listen(80, function () {
-	console.log('WebApp listening on port 80');
+app.listen(WEB_PORT, () => {
+	console.log(`WebApp listening on port ${WEB_PORT}`);
 });
