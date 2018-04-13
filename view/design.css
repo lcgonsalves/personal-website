@@ -1,0 +1,37 @@
+@font-face {
+	font-family: "Another Day In Paradise";
+	src: url("another-day-in-paradise.ttf") format('truetype');
+}
+
+h1 {
+	font-family: 'Another Day In Paradise';
+	color: #464748;
+	font-size: 120px;
+}
+
+li {
+	display: inline !important; 
+}
+
+i {	
+	-webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
+	font-size:2.5em;
+	margin: 15px;
+}
+a {
+	color: #464748;
+	text-decoration:none;
+}
+i:hover {
+	color: black;
+}
+
+a:visited {
+	color: #464748;
+}
+
+.title {
+	padding: 40px;
+	border: 70px;
+}

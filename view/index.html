@@ -1,17 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html class="uk-width-1-1 uk-height-viewport">
 <head>
-	<title>Leo's Website</title>
+	<title>leo gonsalves</title>
 	<!-- script and link tags should go here -->
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.min.css" />
+	<link rel="stylesheet" type="text/css" href="design.css">
+
+	<!-- script imports -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.1.0/trianglify.min.js"></script>
+
 </head>
-<body>
-	<div id="my_view">
-		Model's name is {{ name }} 
-		and her age is {{ age }}
-	</div>
+<body class="uk-vertical-align uk-text-center uk-height-1-1">
+	<section class="uk-width-1-1 uk-vertical-align-middle">
+		<h1 class="title">Leo Gonslves</h1>
+
+		<br>
+		<ul>
+			<li><a href="https://github.com/lcgonsalves" target="_blank"><i class="uk-icon-github-alt"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/leogonsalves" target="_blank"><i class="uk-icon-linkedin-square"></i></a></li>
+		</ul>
+	</section>
 </body>
-<!-- You put this into <html> and you can't do that. It should be in <head> -->
-<!-- or at the end of the file since the DOM tree has to load first -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
-<script src="script.js"></script>
+
+
+	<!-- custom script -->
+	<script src="script.js"></script>
+
+
+	<script type="text/javascript">
+
+	var pattern = Trianglify({
+	width: 200,
+	height: 200
+	});
+	$(document).body.appendChild(pattern.canvas())
+
+	</script>
 </html>

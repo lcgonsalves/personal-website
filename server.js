@@ -1,6 +1,6 @@
-const express = require("express");
-const path	  = require("path");
-const app     = express();
+const express    = require("express");
+const path	     = require("path");
+const app        = express();
 
 // Made this a constant for ease of use
 const WEB_PORT = 3000

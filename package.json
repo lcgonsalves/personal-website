@@ -15,6 +15,7 @@
   "author": "Leo Gonsalves",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "trianglify": "^1.2.0"
   }
 }
