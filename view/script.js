@@ -1,45 +1,36 @@
-var color = [2, 185 ,115];
-var forward = true; 
-
-window.setInterval(function() {
-var pattern = Trianglify({
-	height: window.innerHeight,
-	width: window.innerWidth,
-	cell_size: 40,
-  seed: 123,
-  x_colors: ['#000000', rgbToHex(color[0], color[1], color[2]), '#FFFFFF']
+//Generate the initial fractal
+var fractal = Trianglify({
+    height: window.innerHeight,
+    width: window.innerWidth,
+    //You had this at 40, I set it to 85 to reduce total number of paths...for now
+    cell_size: 85,
+    seed: new Date() //the seed should be random every time you generate something
 });
 
-document.body.appendChild(pattern.canvas());
+//Export the fractal to an SVG DOM
+var fractalSvg = fractal.svg();
 
-pickColor();
+//Add it to the body - giggity...
+document.body.appendChild(fractalSvg);
 
-}, 10);
+//Get the number of paths in the fractal
+var PATH_NUMBER = $("svg").find("path").length;
 
-// Methods: converting RGB to HEX
-function rgbToHex(r, g, b) {
-    return "#" + componentToHex(r) 
-               + componentToHex(g) 
-               + componentToHex(b);}
-function componentToHex(c) {
-    var hex = c.toString(16);
-    return hex.length == 1 ? "0" + hex : hex;}
+console.log(`Total number of paths is: ${PATH_NUMBER}`);
 
-// Method: algorithm for choosng color
-function pickColor(){
-  if(forward){
-    if(color[2] < color[1])
-      color[2] += 5;
-    else
-      color[1] -= 5;
-
-  } else {
-    if(color[1] < color[2])
-      color[1] += 5;
-    else
-      color[2] -= 5;
+//This is the crazy shit you want to do
+var repaintColors = function() {
+  for(var i=0;i<PATH_NUMBER;i++) {
+    var currentPath = $("svg").find("path")[i];
+    var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+    $(currentPath).css({
+      stroke:randomColor,
+      fill:randomColor
+    });
   }
+}
 
-  // check whether fringe values have been met
-  if (color[1] == 115) forward = false;
-  if (color[2] == 115) forward = true;}
+//It's like a trip down drug lane.
+window.setInterval(function() {
+  repaintColors();
+},1000);

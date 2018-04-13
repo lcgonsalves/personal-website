@@ -38,7 +38,7 @@ a:visited {
 /*
  * Fractal style specs
 */
-canvas {
+svg {
 	background-size: cover;
 	height: 100%;
 	left: 0;
@@ -46,4 +46,8 @@ canvas {
 	top: 0;
 	width: 100%;
 	z-index: -1;
+}
+
+path {
+	transition: all 0.8s linear !important;
 }

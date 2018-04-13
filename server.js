@@ -1,9 +1,13 @@
-const express    = require("express");
-const path	     = require("path");
-const app        = express();
+const express     = require("express");
+const path	      = require("path");
+const app         = express();
 
 // Made this a constant for ease of use
 const WEB_PORT = 3000
+
+//Array of fractals - let's say 20
+const FORWARD_FRACTALS = 20;
+const fractal_array = [];
 
 // Since you are serving static content - you should all this
 app.use(express.static("view"));
