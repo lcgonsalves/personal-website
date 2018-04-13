@@ -18,8 +18,9 @@ var myViewModel = new Vue({
 */
 
 var pattern = Trianglify({
-  height: window.innerHeight,
-  width: window.innerWidth,
-  cell_size: 40});
+	height: window.innerHeight,
+	width: window.innerWidth,
+	cell_size: 40
+});
 
 document.body.appendChild(pattern.canvas());
