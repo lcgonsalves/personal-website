@@ -1,11 +1,11 @@
 @font-face {
-	font-family: "Another Day In Paradise";
-	src: url("another-day-in-paradise.ttf") format('truetype');
+	font-family: "TIMESS";
+	src: url("TIMESS__.ttf") format('truetype');
 }
 
 h1 {
-	font-family: 'Another Day In Paradise';
-	color: #464748;
+	font-family: 'TIMESS';
+	color: white;
 	font-size: 120px;
 }
 
@@ -20,20 +20,20 @@ i {
 	margin: 15px;
 }
 a {
-	color: #464748;
+	color: white;
 	text-decoration:none;
 }
 i:hover {
-	color: black;
+	color: #D3D3D3;
 }
 
 a:visited {
-	color: #464748;
+	color: white;
 }
 
 .title {
 	padding: 40px;
-	border: 70px;
+	border: 30px;
 }
 /*
  * Fractal style specs
@@ -49,5 +49,5 @@ svg {
 }
 
 path {
-	transition: all 0.8s linear !important;
+	transition: all 2s linear !important;
 }
