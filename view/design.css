@@ -3,38 +3,96 @@
 	src: url("TIMESS__.ttf") format('truetype');
 }
 
+@font-face {
+	font-family: "Caviar";
+	src: url("CaviarDreams.ttf") format('truetype');
+}
+
+body {
+	font-family: "Caviar";
+}
+
 h1 {
 	font-family: 'TIMESS';
 	color: white;
-	font-size: 120px;
+	font-size: 7.5em;
+	cursor: default;
+}
+
+ul {
+	padding: 0;
 }
 
 li {
-	display: inline !important; 
+	display: box;
+	align-items: center;
+	justify-content: left;
+	padding-left: auto;
+	padding-right: auto;
 }
 
-i {	
-	-webkit-transition: color 1s; /* Safari */
-    transition: color 1s;
-	font-size:2.5em;
-	margin: 15px;
+li > div {
+	width: 7em;
+	padding: 0;
+	margin-left: 45%;
+	margin-right: 50%;
+	margin-bottom: 0.3em;
+    text-align: left;
 }
+
+.list {	
+	-webkit-transition: all 1s; /* Safari */
+    transition: all 1s;
+	font-size: 2.2em;
+	text-decoration: none;
+	color: white;
+    text-align: left;
+}
+
 a {
-	color: white;
-	text-decoration:none;
-}
-i:hover {
-	color: #D3D3D3;
+	-webkit-transition: all 1s; /* Safari */
+    transition: all 1s;
+    text-align: left;
+    color: white;
 }
 
-a:visited {
+.items:visited {
 	color: white;
+	text-decoration: none;
+}
+
+.items:hover {
+	color: white;
+	text-decoration: none;
+	padding-left: 0.5em;
+}
+
+#more-button {
+	-webkit-transition: all 3s; /* Safari */
+    transition: all 3s;
+    position: relative;
+}
+
+#more-button:hover {
+	color: white;
+	text-decoration: none;
+	animation-name: wiggle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/* more button animation */
+@keyframes wiggle {
+	0% {top: 0px;}
+	25% {top: 15px;}
+	100% {top: 0px;}
 }
 
 .title {
 	padding: 40px;
 	border: 30px;
 }
+
 /*
  * Fractal style specs
 */
@@ -43,6 +101,7 @@ svg {
 	height: 100%;
 	left: 0;
 	position: absolute;
+	background-position: 50% 50%;
 	top: 0;
 	width: 100%;
 	z-index: -1;
