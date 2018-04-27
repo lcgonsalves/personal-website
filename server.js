@@ -13,6 +13,11 @@ app.get("/", (req, res) => {
 	console.log("Connection established!");
 });
 
+app.get("/hci", (req, res) => {
+	res.sendFile(path.join(__dirname, "hci/index.html"));
+	console.log("Connection established!");
+});
+
 app.listen(WEB_PORT, () => {
 	// Note the quotation marks - it's a template string literal in JavaScript
 	// You can do stuff like ${2+2} and it will evaluate the expressions
