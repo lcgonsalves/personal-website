@@ -3,7 +3,7 @@ const path	      = require("path");
 const app         = express();
 
 // Made this a constant for ease of use
-const WEB_PORT = 3000
+const WEB_PORT = 80;
 
 // Since you are serving static content - you should all this
 app.use(express.static("view"));
