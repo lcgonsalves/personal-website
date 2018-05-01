@@ -7,6 +7,7 @@ const WEB_PORT = 3000
 
 // Since you are serving static content - you should all this
 app.use(express.static("view"));
+app.use(express.static("hci"));
 
 app.get("/", (req, res) => {
 	res.sendFile(path.join(__dirname, "view/index.html"));
