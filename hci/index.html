@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class="uk-width-1-1">
+<head>
+	<title>Léo's HCI Portifolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.min.css" />
+	<link rel="stylesheet" type="text/css" href="style_hci.css" />
+	
+	<!-- script imports -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
+	
+</head>
+<body class="uk-height-1-1 uk-text-center">
+	<h1 class="uk-container-center title-line">CS3041 CONCLUSION</h1>
+	<div id="main-viewport" class="uk-container-center uk-width-2-3 uk-height-1-1 uk-text-left">
+		<article class="uk-article">
+			<h1 class="uk-article-title">My Design Process - A Manifesto</h1>
+			<p class="uk-article-meta"> Written by L. Gonsalves on april 30, 2018</p>
+			<p class="italics uk-text-lead uk-text-justify">After a handful of weeks exploring some areas of Human-Computer Interaction, I noticed that my design process is centered around one crucial trait: empathy.</p>
+			<p class="uk-text-justify">
+				The Human-Computer Interaction class I took at WPI, CS3041, took me on a diverse journey through very contrasting areas of the topic. From analyzing UX in websites, programs or school buildings, to adapting a website to a specific audience, to utilizing a face-recognition API to design a program that induces "Wellbeing" on its users, we did it all.
+				<br><br>
+				The very first project I engaged in with a group was "Design for Others," where we were tasked with adapting a certain website - my group chose the <a href="mywpl.org" target="_blank">Worcester Public Library</a> website - to mobile, and also design it for a specific audience, which for my group was K-12 teachers. The whole project was centered around thinking like and for this target audience. How do they interact with technology? <b>What are their goals</b> when interacting with the media we're adapting? We had to put ourselves in their shoes in order to even get started with brainstorming; this mindset of putting myself in my target audience's shoes was something I always tried to do before attempting to design a solution to the problem we were given in the other assignments. On design for Wellbeing, the project we designed a "You laugh, you lose" (YLYL) game using facial recognition, I constantly went back to the question of "who is my target audience and why are they using my system?" We tried, even if unconsciously, to tailor the game to students that were looking for a distraction, despite the project not having an inherent need for identifying a target audience. When designing an interactive system, I <b>always force myself to take into account the feelings, purpose and expertise of the potential user of that system</b>, even if the overall functionality will never officially require this thought process. I believe, similar to what is discussed by Peter Hyer, Fabian Herrmann, and Kristin Kelly in this <a href="https://medium.com/googleplaydev/applying-human-centered-design-to-emerging-technologies-6ad7f39d8d30" target="_blank">article</a>, that in order to design something truly human centric, we need to take into account most details about the people who are going to interact with it.
+				<br><br>
+				I believe an essential point to designing effectively is <b>being consistent when interacting with the user</b>, and in this sense I like to follow some guidelines. <a href="https://developer.apple.com/ios/human-interface-guidelines/overview/themes/" target="_blank">Apple's Developer Guidelines</a> include many principles I attempt to stick by when creating any visual project. These include <b>aesthetic integrity and consistency</b>, as well as <b>feedback</b>, concepts that I've applied (even if somewhat unsuccessfully) to my design of the YLYL game website by using a symmetric organization of elements on the screen, as well as a clean, unintrusive user interface. I also made use of colors commonly associated with certain concepts to communicate information to the user, such as using the color blue to communicate that the bar is not filled, and red to communicate that the user is in danger of losing the game. This was unfortunately not so well implemented on the design for understanding bit that I developed - a data visualization for the <a href="https://users.wpi.edu/~lcgonsalves/cs3041-d4u/index.html" target="_blank">amount of curse words in a given Tarantino movie</a>. I did not implement too much guidance for the user, despite keeping the design somewhat consistent throughout the entire webpage. Again, these guidelines circle back to the key concept of empathetic design: we are making some means of interaction for some person, and unless we imagine how that person will react to our design choices, we won't make something that is easily comprehensible.
+				<br><br>
+				One of the key concepts I enjoyed exploring in this course (more specifically on Design for Understanding) was the fact that humans arguably <a href="https://spectrum.ieee.org/podcast/biomedical/bionics/does-the-brain-work-logarithmically" target="_blank">possess a logarithmic view of the world</a>, which essentially means that we need some sort of reference to percieve differences in size or amount. The way I attempted to apply this in my Tarantino DataViz assignment was making use of font size to show the frequency of use of a certain word. I also attempted to do this <b>without displaying any numerical information to the users</b>, therefore further relying on this sense of scale. In other words, I tried to show frequency by displaying size - like a bar chart - but of fucks, shits, and n-words, since Quentin Tarantino enjoys filling his movies with this... diverse vocabulary.
+				<br><br>
+				The last two points I used to guide my design process are quite intertwined. That is, colorful design, and using such design to instill a positive feeling or thought on the user. The first example of this is our WPL website adaptation, which turned out to be too colorful or too childish for some user-testers, despite being the original color scheme of the WPL logo. I tried, in this case, to make use of the original palette to create big, colorful buttons that made it easy to navigate the app on a mobile device, but obviously overlooking the similarity of these buttons to a child's toy collection in the sense that both are big and colorful.<br>
+				For Design for Another World, my group set the goal to be creating a simulation that provokes relaxing thoughts and immerses the user in a calming environment. However, due to the fact that I was unable to texture the assets in the environment, they had solid, single-color textures. Because of this, the use of a colorful palette went against our purpose. However, we overcame this limitation by making use of the surround-sound capabilities of A-Frame to create an immersive <a href="https://sleet-garlic.glitch.me/" target="_blank">beach environment</a>. The use of a colorful visual was, as I see it, crucial to turn the Tarantino DataViz into something comical rather than offensive. As a counter example to my creations, the use of dark and "negative" colors in this <a href="http://eg.bucknell.edu/~emp017/mass_shootings/" target="_blank">data visualization of mass shootings in America</a> shows just how impactful the choice of color and sound can affect the user experience.
+				<br><br>
+				It would be impossible to conclude this course without discussing the most difficult situation of all:<b> reality</b>. Walking into a dataviz, VR, UI, or web-dev project with all sorts of ideas only to be met with an enormous learning curve (which looks more like a barrier) is a daunting experience. I would say an important point to take away from this experience is the need to be flexible. When treading into a new and strange land where you have to deal with new frameworks in a short amount of time, one needs to be able to make design choices that, because of time constraints and skill limitations, only vaguely resemble your original ideas. Not only that, but to shape these design choices to be meaningful, and in the end come up with some sort of compromise between ideation and skill. It has been a truly incredible and enlighting experience to explore so many aspects of HCI and to see how these areas could revolutionize many day-to-day tasks of today.
+
+			</p>
+
+
+			
+		</article>
+		<h1 class="uk-article-title">Design Portifolio</h1>
+		<p> Below are links to the Medium articles of each project </p>
+		<div id="portifolio" class="uk-grid uk-container-center uk-text-center">
+			<div id="proj1" class="uk-width-1-3 uk-height-1-3"><a href="https://medium.com/@leocamposvieira/atwater-kent-laboratories-an-example-of-good-redesign-7d1fa4fb795c" target="_blank">
+				<h3>Good, bad, ugly</h3>
+				<img src="img/proj1.jpg" class="uk-cover-background">
+			</a>
+			</div>
+			<div id="proj2" class="uk-width-1-3 uk-height-1-3">
+				<a href="https://medium.com/@robertharrison43/design-for-others-redesign-of-the-worcester-public-library-for-k-12-teachers-bea8d3be5812" target="_blank">
+				<h3>Design For Others</h3>
+				<img src="img/proj2.jpg" class="uk-cover-background">
+				</a>
+			</div>
+			<div id="proj3" class="uk-width-1-3 uk-height-1-3">
+				<a href="https://medium.com/@corrinmcourville/design-for-understanding-c2155433cc2a" target="_blank">
+				<h3>Design For Understanding</h3>
+				<img src="img/proj3.jpg" class="uk-cover-background">
+				</a>
+			</div>
+			<div id="proj4" class="uk-width-1-3 uk-height-1-3">
+				<a href="https://medium.com/@DillonBordeleau/a-politically-intelligent-chatbot-4b700ac9d098" target="_blank">
+				<h3>Design For Tension</h3>
+				<img src="img/proj4.JPG" class="uk-cover-background">
+			</a>
+			</div>
+			<div id="proj5" class="uk-width-1-3 uk-height-1-3">
+				<a href="https://medium.com/@robertharrison43/design-for-well-being-c6e36c045b03" target="_blank">
+				<h3>Design For Wellbeing</h3>
+				<img src="img/proj5.jpg" class="uk-cover-background">
+			</a>
+			</div>
+			<div id="proj6" class="uk-width-1-3 uk-height-1-3">
+				<a href="https://medium.com/design-for-another-world/design-for-another-world-virtual-reality-beach-scene-35590de784dd" target="_blank">
+				<h3>Design For Another World</h3>
+				<img src="img/proj6.jpg" class="uk-cover-background">
+			</a>
+			</div>
+		</div>
+
+		<h4>Copyrights reserved to Leo Gonsalves, 2018</h4>
+	</div>
+</body>
