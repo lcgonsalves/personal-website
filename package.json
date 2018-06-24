@@ -16,6 +16,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
-    "trianglify": "^1.2.0"
+    "node-gyp": "^3.7.0",
+    "trianglify": "^1.2.0",
+    "webpack": "^4.12.0"
   }
 }
