@@ -4,8 +4,8 @@ $(document).ready(function() {
 
   //Generate the initial fractal
   var fractal = Trianglify({
-    height: screen.height,
-    width: screen.width,
+    height: $(window).height(),
+    width: $(window).width(),
     x_colors: ["#232598", "#b7b4db", "#544b8d"],
     cell_size: 65,
     seed: curSeed //the seed should be random every time you generate something
