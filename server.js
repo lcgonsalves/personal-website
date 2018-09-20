@@ -19,6 +19,10 @@ app.get("/hci", (req, res) => {
 	console.log("Connection established to hci!");
 });
 
+app.get('/resume', (req, res) => {
+	res.status(200).sendFile(path.join(__dirname, "view/leo-resume.pdf"));
+});
+
 
 app.listen(WEB_PORT, () => {
 	// Note the quotation marks - it's a template string literal in JavaScript
