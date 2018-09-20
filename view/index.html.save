@@ -2,6 +2,8 @@
 <html class="uk-width-1-1 uk-height-viewport">
 <head>
 	<title>leo gonsalves</title>
+	
+
 	<!-- script and link tags should go here -->
 
 	<!-- stylesheets -->
@@ -24,11 +26,9 @@
 			<li><div><a class="items" href="https://www.linkedin.com/in/leogonsalves" target="_blank"><i class="uk-icon-justify uk-icon-linkedin-square"></i> linkedin</a></div></li>
 			<li><div><a class="items" href="https://500px.com/leocamposvieira" target="_blank"><i class="uk-icon-justify uk-icon-500px"></i> 500px</a></div></li>
 
-			<li><div><a class="items" href="/resume" target="_blank"><i class="uk-icon-justify uk-icon-file-pdf-o"></i>resume</a></div></li>
-
 			<br><br>
 
-			<!-- <li><div><a id="more-button"><i class="uk-icon-justify uk-icon-angle-double-down"></i> more</a></div></li> -->
+			<li><div><a id="more-button"><i class="uk-icon-justify uk-icon-angle-double-down"></i> more</a></div></li>
 		</ul>
 	</section>
 </body>
